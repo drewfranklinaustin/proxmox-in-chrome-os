@@ -13,7 +13,7 @@ sudo apt-get update && sudo apt-get install -yqq daemonize dbus-user-session fon
 
 wget https://github.com/drewfranklinaustin/proxmox-in-chrome-os/blob/main/start-snap
 
-make sure sart-snap is in home folder you'll have to run script every time you restart ubuntu
+make sure start-snap is in home folder you'll have to run script every time you restart ubuntu
 
 sudo ./start-snap
 
