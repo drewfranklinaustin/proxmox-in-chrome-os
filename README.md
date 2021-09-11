@@ -113,8 +113,38 @@ lxc exec penguin -- bash
 
 next step we need to set a full static ip cause it's required for proxmox to install correctly 
 
+rm /etc/network/interfaces && rm /etc/hosts 
+
 wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hosts -O /etc/network/interfaces
 
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hosts -O /etc/hosts
 
+Then type
+
+/etc/init.d/networking restart
+
+Then
+
+exit
+
+Then
+
+lxc restart penguin
+
+Then
+
+lxc exec penguin -- bash
+
+Then
+
+hostname --ip-address 
+
+Then
+
+hostname prox4m1.proxmox.com
+
+Then
+
+wget https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg 
 
 will finish later
