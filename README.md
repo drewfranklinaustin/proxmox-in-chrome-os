@@ -124,7 +124,7 @@ make both these lines line up with f in iface it will only take one space on eit
 
 next change dhcp to static
 
-next hit ctrl x then y the enter
+next hit ctrl x then y then enter
 
 
 
