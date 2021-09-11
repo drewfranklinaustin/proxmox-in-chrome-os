@@ -209,12 +209,25 @@ Then
 
 sudo apt-get update && sudo apt-get upgrade
 
+Then
+
 passwd root
+
+Then
 
 exit
 
+Then
+
 lxc restart proxmox
 
+Then
+
+exit
+
+Then
+
+exit
 
 
 
