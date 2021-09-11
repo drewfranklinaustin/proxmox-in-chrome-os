@@ -113,7 +113,7 @@ lxc exec penguin -- bash
 
 next step we need to set a full static ip cause it's required for proxmox to install correctly 
 
-wget https://github.com/drewfranklinaustin/proxmox-in-chrome-os/blob/main/interfaces -O /etc/network/interfaces
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hosts -O /etc/network/interfaces
 
 
 
