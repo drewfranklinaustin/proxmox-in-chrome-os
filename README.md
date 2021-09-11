@@ -43,7 +43,7 @@ mkdir -p proxmox
 
 cd proxmox
 
-sudo distrobuilder build-lxd proxmox.yaml
+sudo distrobuilder build-lxd proxmox.yaml -o image.architecture=amd64   -o image.release=bullseye
 
 It's important to use this custom build cause it's the only way that I know of anyways to make open-iscsi run properly in linux beta in Chrome OS
 
