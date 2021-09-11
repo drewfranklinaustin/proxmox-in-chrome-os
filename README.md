@@ -115,6 +115,17 @@ next step we need to set a full static ip cause it's required for proxmox to ins
 
 nano /etc/network/interfaces
 
+under line iface eth0 inet dhcp type
+
+address 100.115.92.194
+gateway 100.115.92.193
+
+make both these lines line up with f in iface it will only take one space on either line to do so
+
+next change dhcp to static
+
+next hit ctrl x then y the enter
+
 
 
 will finish later
