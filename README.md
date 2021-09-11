@@ -130,7 +130,7 @@ next type
 
 nano /etc/hosts
 
-First delete the first line which should say 127.0.0.1       penguin  
+First delete the first line which should say 127.0.0.1      penguin  
 
 Next goto the end of line two and hit enter cause the line your about to add needs to be the new line two when in place type
 
