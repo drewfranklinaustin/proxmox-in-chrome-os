@@ -89,4 +89,20 @@ lxc start penguin
 
 lxc exec penguin -- bash
 
+cat >/etc/network/interfaces <<EOL
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+ address 100.115.92.194
+ gateway 100.115.92.193
+source /etc/network/interfaces.d/*
+EOL
+
+
 will finish later
