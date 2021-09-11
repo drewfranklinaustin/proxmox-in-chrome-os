@@ -139,10 +139,13 @@ Next goto the end of line two and hit enter cause the line your about to add nee
 once this lines is in place the file should look like this 
 
 127.0.0.1       localhost
+
 100.115.92.194  prox4m1.proxmox.com pve1
 
 ::1             localhost ip6-localhost ip6-loopback
+
 ff02::1         ip6-allnodes
+
 ff02::2         ip6-allrouters
 
 will finish later
