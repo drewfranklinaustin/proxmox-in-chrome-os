@@ -11,9 +11,9 @@ if socket error appears
 
 sudo apt-get update && sudo apt-get install -yqq daemonize dbus-user-session fontconfig
 
-wget https://github.com/drewfranklinaustin/proxmox-in-chrome-os/blob/main/start-snap
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/start-snap -O ./start-snap
 
-make sure start-snap is in home folder you'll have to run script every time you restart ubuntu
+make sure start-snap is in your user home folder you'll have to run script every time you restart ubuntu
 
 sudo ./start-snap
 
