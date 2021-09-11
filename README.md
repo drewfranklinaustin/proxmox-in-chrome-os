@@ -33,6 +33,8 @@ go with all the default option unless your familar and wish to change any of the
 
 next step
 
+sudo apt install -y golang-go debootstrap rsync gpg squashfs-tools git
+
 mkdir -p ContainerImages
 
 cd ContainerImages
