@@ -43,7 +43,7 @@ mkdir -p proxmox
 
 cd proxmox
 
-wget https://github.com/drewfranklinaustin/proxmox-in-chrome-os/blob/main/proxmox.yaml
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/proxmox.yaml -O ./proxmox.yaml
 
 sudo distrobuilder build-lxd proxmox.yaml -o image.architecture=amd64 -o image.release=bullseye
 
