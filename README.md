@@ -223,12 +223,25 @@ lxc restart proxmox
 
 Then
 
+lxc exec proxmox -- bash
+
+Then
+
+apt autoremove
+
+apt-get clean
+
+history -c
+
 exit
 
 Then
 
 exit
 
+Now we need to setup your terminal enviroment
+
+will finish later
 
 
 
