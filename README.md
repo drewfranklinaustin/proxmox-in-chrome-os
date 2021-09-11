@@ -79,6 +79,12 @@ next type
 
 lxc stop penguin
 
+lxc network attach lxdbr0 penguin eth0 eth0
 
+lxc config device set penguin eth0 ipv4.address 100.115.92.194
+
+lxc start penguin
+
+lxc exec penguin -- bash
 
 will finish later
