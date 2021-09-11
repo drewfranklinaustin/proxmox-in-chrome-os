@@ -43,7 +43,7 @@ mkdir -p proxmox
 
 cd proxmox
 
-sudo distrobuilder build-lxd proxmox.yaml -o image.architecture=amd64   -o image.release=bullseye
+sudo distrobuilder build-lxd proxmox.yaml -o image.architecture=amd64 -o image.release=bullseye
 
 It's important to use this custom build cause it's the only way that I know of anyways to make open-iscsi run properly in linux beta in Chrome OS
 
@@ -65,29 +65,20 @@ next type
 
 cd /mnt/shared/MyFiles/Downloads/proxmox
 
-
-
-
-
-
-
-
-
-
-
+lxc delete penguin --force
 
 lxc image import lxd.tar.xz rootfs.squashfs --public --alias proxmox
 
+lxc launch local:proxmox penguin
+
+lxc launch 
+
+If you see the penguin container the you'll know you where successful 
+
+next type 
+
+lxc stop penguin
 
 
-
-
-
-
-
-
-lxc launch
-
-local:proxmox penguin
 
 will finish later
