@@ -53,6 +53,29 @@ next boot into Chrome OS on your Chromebook or your pc if on your pc this should
 
 if you dont have linux beta enabled it's important that you run the inital linux beta setup if your using the rammus image version of Chrome OS you must enter Chrome and in the address bar type chrome://flags/#crostini-use-dlc disble flag and click restart
 
+if you had to install linux beta the repeat the share with linux step on the downloads folder
+
+the open the terminal program in your programs menu this is important so that it mounts your shared folders once it takes you to the bash screen go ahead and type exit
+
+Now you are ready to begin the creation of the proxmox container hold down Ctrl Alt T to open Chrome OS Developer Shell or Crosh the type
+
+vmc start termina
+
+next type
+
+cd /mnt/shared/MyFiles/Downloads/proxmox
+
+
+
+
+
+
+
+
+
+
+
+
 lxc image import lxd.tar.xz rootfs.squashfs --public --alias proxmox
 
 
