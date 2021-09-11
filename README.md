@@ -55,7 +55,29 @@ next boot into Chrome OS on your Chromebook or your pc if on your pc this should
 
 if you dont have linux beta enabled it's important that you run the inital linux beta setup if your using the rammus image version of Chrome OS you must enter Chrome and in the address bar type chrome://flags/#crostini-use-dlc disble flag and click restart
 
-if you had to install linux beta the repeat the share with linux step on the downloads folder
+next click on the clock icon in the lower right hand corner then in menu click on the gear icon to enter settings then click on the advaned option then the sub option developers then inside that menu click on Linux development environment (Beta) if you have just installed the linux beta then repeat the option for sharing next open the manage shared folders to make sure your shared folder is showing if so hit back and goto linux beta main menu
+
+Next click on port forwarding option and click on add set type to tcp under port type
+
+8006
+
+Under lable type
+
+proxmox tcp
+
+Then click add
+
+Next click add again this time set typ to udp under port type
+
+8006
+
+Under lable type 
+
+proxmox udp
+
+Then click add
+
+Then enable both ports
 
 the open the terminal program in your programs menu this is important so that it mounts your shared folders once it takes you to the bash screen go ahead and type exit
 
