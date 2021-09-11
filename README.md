@@ -147,4 +147,41 @@ Then
 
 wget https://enterprise.proxmox.com/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg 
 
+Then
+
+sha512sum /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
+
+Then
+
+echo "deb [arch=amd64] http://download.proxmox.com/debian/pve bullseye pve-no-subscription" > /etc/apt/sources.list.d/pve-install-repo.list
+
+Then
+
+apt-get update && apt-get full-upgrade -y
+
+Then
+
+apt-get install proxmox-ve postfix -y
+When the postfix installation menu pops up choose local install and as long as you ran the hostname commands earlier it should show the correct hostname which should be prox4m1.proxmox.com
+
+If correct then hit enter and let the setup run through estimated time 15 to 30 minutes depending on hardware
+
+Warning if you get to the end of the install and installation errors pop up don't freak out and think you've failed
+
+Next type
+
+exit
+
+Then
+
+lxc restart penguin
+
+The lxc exec penguin -- bash
+
+If error occurred type dpkg --configure -a && apt-get upgrade and it will run the setup process again except this time it should only a few seconds and you'll see that it properly installed this time
+
+Now that proxmox is installed now it's time setup Chrome OS app integration
+
+
+
 will finish later
