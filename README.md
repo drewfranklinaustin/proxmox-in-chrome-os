@@ -113,39 +113,8 @@ lxc exec penguin -- bash
 
 next step we need to set a full static ip cause it's required for proxmox to install correctly 
 
-nano /etc/network/interfaces
+wget https://github.com/drewfranklinaustin/proxmox-in-chrome-os/blob/main/interfaces -O /etc/network/interfaces
 
-under line iface eth0 inet dhcp type
 
-address 100.115.92.194
-gateway 100.115.92.193
-
-make both these lines line up with f in iface it will only take one space on either line to do so
-
-next change dhcp to static
-
-next hit ctrl x then y then enter
-
-next type
-
-nano /etc/hosts
-
-First delete the first line which should say 127.0.0.1      penguin  
-
-Next goto the end of line two and hit enter cause the line your about to add needs to be the new line two when in place type
-
-100.115.92.194  prox4m1.proxmox.com pve1
-
-once this lines is in place the file should look like this 
-
-127.0.0.1       localhost
-
-100.115.92.194  prox4m1.proxmox.com pve1
-
-::1             localhost ip6-localhost ip6-loopback
-
-ff02::1         ip6-allnodes
-
-ff02::2         ip6-allrouters
 
 will finish later
