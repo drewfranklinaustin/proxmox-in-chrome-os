@@ -225,6 +225,10 @@ lxc exec penguin -- bash
 
 Then
 
+echo $(hostname -I | cut -d\  -f1) $(hostname) | sudo -h 127.0.0.1 tee -a /etc/hosts
+
+Then
+
 apt autoremove
 
 apt-get clean
