@@ -233,11 +233,21 @@ wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/m
 
 Then
 
+/etc/init.d/networking restart
+
+Then
+
 apt autoremove
+
+Then
 
 apt-get clean
 
+Then
+
 history -c
+
+Then
 
 exit
 
@@ -251,7 +261,7 @@ exit
 
 Now we need to setup your terminal enviroment
 
-Now open terminal app in your Chrome OS app menu not you might have to open it server time cause it's rebuilding your user profile it will be the same user you started with in the inital linux beta setup once that's done open your Chrome Browser and in the address bar type
+Now open terminal app in your Chrome OS app menu you might have to open it serveral times cause it's rebuilding your user profile it will be the same user you started with in the inital linux beta setup once that's done open your Chrome Browser and in the address bar type
 
 https://100.115.92.194:8006
 
