@@ -225,7 +225,11 @@ lxc exec penguin -- bash
 
 Then
 
-echo $(hostname -I | cut -d\  -f1) $(hostname) | sudo -h 127.0.0.1 tee -a /etc/hosts
+rm /etc/hosts
+
+Then
+
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hostfinal -O /etc/hosts
 
 Then
 
