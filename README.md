@@ -95,7 +95,7 @@ lxc image import lxd.tar.xz rootfs.squashfs --public --alias proxmox
 
 lxc launch local:proxmox penguin
 
-lxc launch 
+lxc list
 
 If you see the penguin container the you'll know you where successful 
 
