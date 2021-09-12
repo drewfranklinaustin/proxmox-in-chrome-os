@@ -237,6 +237,10 @@ Then
 
 exit
 
+Then
+
+exit
+
 Now we need to setup your terminal enviroment
 
 Now open terminal app in your Chrome OS app menu not you might have to open it server time cause it's rebuilding your user profile it will be the same user you started with in the inital linux beta setup once that's done open your Chrome Browser and in the address bar type
