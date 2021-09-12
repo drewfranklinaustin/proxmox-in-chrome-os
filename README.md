@@ -115,7 +115,7 @@ next step we need to set a full static ip cause it's required for proxmox to ins
 
 rm /etc/network/interfaces && rm /etc/hosts 
 
-wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/interfaces -O /etc/network/interfaces && wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hosts -O /etc/hosts
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/interfaces -O /etc/network/interfaces && wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hostsfirst -O /etc/hosts
 
 Then type
 
@@ -229,7 +229,7 @@ rm /etc/hosts
 
 Then
 
-wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hostfinal -O /etc/hosts
+wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/hostsfinal -O /etc/hosts
 
 Then
 
