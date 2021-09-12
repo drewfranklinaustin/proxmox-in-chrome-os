@@ -221,7 +221,7 @@ lxc restart proxmox
 
 Then
 
-lxc exec proxmox -- bash
+lxc exec penguin -- bash
 
 Then
 
