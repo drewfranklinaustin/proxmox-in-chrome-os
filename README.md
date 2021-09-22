@@ -3,6 +3,10 @@ Run proxmox inside Chrome OS
 
 First step run ubuntu in windows for linux subsystem 
 
+Then goto your windows store and search and install GWSL once its installed run it from your start menu so it's running in the background
+
+now go back to your ubuntu terminal
+
 in ubunut run sudo apt-get install lxc 
 
 sudo snap install core 
@@ -49,7 +53,7 @@ sudo distrobuilder build-lxd proxmox.yaml -o image.architecture=amd64 -o image.r
 
 It's important to use this custom build cause it's the only way that I know of anyways to make open-iscsi run properly in linux beta in Chrome OS
 
-next copy this proxmox directory to an outside source be a flash drive or network share you can access the windows drive by means of /mnt/c how ever my prfered method is to install midnight commander using sudo apt install mc and access my network share on my synology nas by opening mc clicking on right and pointing it to my ftp share and copying the entire proxmox folder
+next copy this proxmox directory to an outside source be a flash drive or network share you can access the windows drive by means of /mnt/c also if you left click on gwsl icon in lower right hand corner of your desktop then select the linux files option an explorer window will open showing your entire ubuntu file tree and all you have to do is make your way to the proxmox directory however my prfered method is to install midnight commander using sudo apt install mc and access my network share on my synology nas by opening mc clicking on right and pointing it to my ftp share and copying the entire proxmox folder but which ever method works for you we just need to copy the folder to the transfer medium
 
 next boot into Chrome OS on your Chromebook or your pc if on your pc this should work on both Cloudready Chromium as well brunch framework Rammus image Chrome OS once your in your main desktop open files program and copy proxmox folder from your transition media to your download directory next right click on downloads and enable share with linux
 
