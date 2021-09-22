@@ -53,7 +53,7 @@ next copy this proxmox directory to an outside source be a flash drive or networ
 
 next boot into Chrome OS on your Chromebook or your pc if on your pc this should work on both Cloudready Chromium as well brunch framework Rammus image Chrome OS once your in your main desktop open files program and copy proxmox folder from your transition media to your download directory next right click on downloads and enable share with linux
 
-if you dont have linux beta enabled it's important that you run the inital linux beta setup if your using the rammus image version of Chrome OS you must enter Chrome and in the address bar type chrome://flags/#crostini-use-dlc disble flag and click restart
+if you dont have linux beta enabled it's important that you run the inital linux beta setup if your using the rammus image version of Chrome OS you must enter Chrome and in the address bar type chrome://flags/#crostini-use-dlc disable flag and click restart
 
 next click on the clock icon in the lower right hand corner then in menu click on the gear icon to enter settings then click on the advaned option then the sub option developers then inside that menu click on Linux development environment (Beta) if you have just installed the linux beta then repeat the option for sharing next open the manage shared folders to make sure your shared folder is showing if so hit back and goto linux beta main menu
 
