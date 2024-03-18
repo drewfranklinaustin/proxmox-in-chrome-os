@@ -1,14 +1,20 @@
-deb http://deb.debian.org/debian bookworm main contrib non-free
-deb-src http://deb.debian.org/debian bookworm main contrib non-free
-
+# Debian Main Repository #
+deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main contrib non-free-firmware
+# Debian Security Repository #
 deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free
 deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free
-
+# Debian Update Repository #
 deb http://deb.debian.org/debian bookworm-updates main contrib non-free
 deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free
-
+# Debian Backports Repository #
 deb http://deb.debian.org/debian bullseye-backports main contrib non-free 
 deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
-
+# Steam Repository #
 deb [arch=amd64,i386  signed-by=/usr/share/keyrings/steam.gpg] https://repo.steampowered.com/steam/ stable steam
 deb-src [arch=amd64,i386 signed-by=/usr/share/keyrings/steam.gpg] https://repo.steampowered.com/steam/ stable steam
+# Steam OS Repository #
+deb [arch=amd64,i386 trusted=yes] https://repo.steampowered.com/steamos/ brewmaster main contrib non-free
+deb-src [arch=amd64,i386 trusted=yes] https://repo.steampowered.com/steamos/ brewmaster main contrib non-free
+
+
