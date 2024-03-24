@@ -7,13 +7,6 @@ config:
         name: "drewfranklinaustin"
     package_update: true
     package_upgrade: true
-    runcmd:
-      - dpkg --add-architecture i386
-      - rm /etc/apt/sources.list
-      - wget https://raw.githubusercontent.com/drewfranklinaustin/proxmox-in-chrome-os/main/steamsources.list -O /etc/apt/sources.list
-      - wget https://repo.steampowered.com/steam/archive/stable/steam.gpg -O /usr/share/keyrings/steam.gpg && sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
-      - apt-get update
-      - apt-get upgrade
     packages:
       - openssh-sftp-server
       - bash-completion
