@@ -7,7 +7,7 @@ config:
         name: "drewfranklinaustin"
     package_update: true
     package_upgrade: true
-    repositories:
+   repositories:
   - name: sources.list
     url: |-
       deb http://deb.debian.org/debian bookworm main contrib non-free-firmware
