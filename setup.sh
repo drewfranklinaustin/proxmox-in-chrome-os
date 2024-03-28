@@ -15,6 +15,6 @@ wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb 
 sudo apt-get -t brewmaster install linux-image-amd64 && sudo apt full-upgrade -y && sudo apt autoremove 
 sudo dpkg -r fuse 
 sudo apt-get -f install
-sudo apt-get clean && history -c
+sudo apt-get clean
 
 
