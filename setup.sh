@@ -16,5 +16,5 @@ sudo apt-get -t brewmaster install linux-image-amd64 && sudo apt full-upgrade -y
 sudo dpkg -r fuse 
 sudo apt-get -f install
 sudo apt-get clean
-
+sudo rm ./setup.sh
 
